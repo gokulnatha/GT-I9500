@@ -268,6 +268,9 @@ struct mipi_dsim_device {
 
 	struct mipi_dsim_lcd_driver	*dsim_lcd_drv;
 	unsigned int enabled;
+#ifdef CONFIG_FB_MIPI_DSIM_DBG
+	unsigned int timeout_cnt;
+#endif
 };
 
 /**
